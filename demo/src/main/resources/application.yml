@@ -1,0 +1,24 @@
+keycloak:
+  auth-server-url: http://localhost:8000/auth
+  realm: oauth2-demo-realm
+  resource: demo-springboot
+  credentials:
+    secret: 6b5d2e3a-52ac-411d-96a8-e443c7809802
+  bearer-only: 'true'
+  use-resource-role-mappings: 'true'
+  ssl-required: external
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  datasource:
+    password: '123456'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+server:
+  port: '8080'
