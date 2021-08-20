@@ -1,0 +1,6 @@
+[submodule "keycloak-app"]
+	path = keycloak-app
+	url = https://github.com/Rayen023/keycloak-demo
+[submodule "keycloak-demo"]
+	path = keycloak-demo
+	url = https://github.com/Rayen023/keycloak-demo
